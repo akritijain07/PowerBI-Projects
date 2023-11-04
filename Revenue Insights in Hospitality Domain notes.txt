@@ -1,0 +1,31 @@
+- understood metrics to be displayed on the dashboard
+	- RevPAR: Revenue per available room (= total revenue/total available rooms)
+	- % occupancy: (= total rooms sold/total available rooms)
+	- ADR: Average daily rate (= total revenue/total rooms sold OR = revpar/% occupancy)
+	- SRN: Sellable room nights
+	- DSRN: Daily sellable room nights (=SRN/30 or 31)
+	- Revenue
+	- URN: Utilised room nights
+	- BRN: Booked room nights (URN + no-shows + cancellations)
+	- Realisation: URN/BRN
+	- Weekend/Weekday split (Fri-Sat: weekends; Sun-Thurs: weekdays)
+	- Business/Ledger split (Business: have more activity on weekdays; Ledger: have more activity on weekends)
+	- weekly trends
+	- Channel level split
+
+- loaded datasets into powerbi
+
+- connected relationships between tables
+
+- cleaning data (DAX)
+	- creating calculated columns
+		- included column with proper definition of weekend/weekday 
+	- creating measures as per metrics list
+
+- creating dashboard
+
+- generating insights
+	- hotels are not utilising dynamic pricing strategy as ADR is observed to be constant week-on-week despite changing RevPAR
+	- hotels are not utilising dynamic weekday/weekend pricing strategy as ADR is observed to be nearly the same for weekday/weekend
+	- hotels are not utilising channel-level pricing strategy as their direct offline ADR is higher than third-party platform ADR and direct online ADR is not as low as it can be (through direct channels, hotels can drop prices as they don't have to pay high commissions)
+	- when we look at the 20% of the hotels causing 80% of the problems (Pareto Principle) for increasing business, we see that the hotel with lowest occupancy has low ratings as well as high cancellations; this shows that they could be struggling with providing good service 
